@@ -1,0 +1,81 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+}
+
+.wrapper {
+    padding: 0;
+    margin: 0 auto;
+    width: 95%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    width: 36px;
+    height: 36px;
+    background-color: rgb(95, 7, 113);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: none;
+}
+.danger {
+    background-color: rgb(209, 98, 98);
+    cursor: not-allowed;
+}
+.success {
+    background-color: rgb(81, 223, 126);
+}
+.new {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: rgb(217, 69, 10);
+    border-radius: 5px;
+    border: 1px solid rgb(217, 69, 10);
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.toaster {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 200px;
+    height: 60px;
+    background-color: red;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.toaster-danger {
+    background-color: #c46565;
+}
+.toaster-win {
+    background-color: #42ad5f;
+}
+
+.toaster p {
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
